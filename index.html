@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_final.css" />
+  <script src="script_final.js"></script>
+  <title>Desk</title>
+</head>
+
+<body onload="clock(); moon(); randomPoem()">
+  <div id="header">
+    <div id="links">
+      <a href="https://github.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" />
+      </a>
+
+      <a href="https://codepen.io">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2018/03/codepen-button-logo.png" />
+      </a>
+      <a href="https://www.codewars.com/dashboard">
+        <img
+          src="https://user-images.githubusercontent.com/76241195/147094572-962f911f-9ebd-4615-b72f-ff076f4033e8.png" />
+      </a>
+      <a href="https://stackoverflow.com/">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111640.png" />
+      </a>
+      <a href="https://www.cleveland.com/browns/">
+        <img src="https://www.vectorkhazana.com/assets/images/products/Cleveland_Browns_Black_Svg.png" />
+      </a>
+    </div>
+    <div id="crest">
+      <a href="https://www.benning.army.mil/infantry/artb/Graduates/images/11-04.jpg">
+        <img id="DUI"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/75th_Ranger_Regiment_Distinctive_Unit_Insignia.svg/134px-75th_Ranger_Regiment_Distinctive_Unit_Insignia.svg.png" />
+      </a>
+    </div>
+    <div id="time">
+      <div id="myClock">clock</div>
+      
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="poetry">
+      <iframe id="window" src="" scrolling='yes'></iframe>
+      <div id="search"></div>
+    </div>
+    <div id="creed">
+      <p><b>R</b>ecognizing that I volunteered as a Ranger, fully knowing the hazards of my chosen profession, I will
+        always endeavor to uphold the prestige, honor, and high esprit de corps of my Ranger Regiment.</p>
+      <p><b>A</b>cknowledging the fact that a Ranger is a more elite soldier, who arrives at the cutting edge of battle
+        by land, sea, or air, I accept the fact that as a Ranger, my country expects me to move further, faster, and
+        fight harder than any other soldier.</p>
+      <p><b>N</b>ever shall I fail my comrades. I will always keep myself mentally alert, physically strong, and morally
+        straight, and I will shoulder more than my share of the task, whatever it may be, one hundred percent and then
+        some.</p>
+      <p><b>G</b>allantly will I show the world that I am a specially selected and well trained soldier. My courtesy to
+        superior officers, neatness of dress, and care of equipment shall set the example for others to follow.</p>
+      <p><b>E</b>nergetically will I meet the enemies of my country. I shall defeat them on the field of battle for I am
+        better trained and will fight with all my might. Surrender is not a Ranger word. I will never leave a fallen
+        comrade to fall into the hands of the enemy and under no circumstances will I ever embarrass my country.</p>
+      <p><b>R</b>eadily will I display the intestinal fortitude required to fight on to the Ranger objective and
+        complete the mission, though I be the lone survivor.</p>
+      <p style="justify-content: center; margin-left: 10vw;"><b>RANGERS LEAD THE WAY!</b></p>
+    </div>
+    <div id="tarot">
+      <div>
+        <button onclick="replaceFirstCard();">
+          <img class="cards" id="card1" src="" />
+        </button>
+      </div>
+      <div>
+        <button onclick="replaceSecondCard();">
+          <img class="cards" id="card2" src="" />
+        </button>
+      </div>
+      <div>
+        <button onclick="replaceThirdCard();">
+          <img class="cards" id="card3" src="" />
+        </button>
+      </div>
+      <div>
+        <button class="deck" onclick="dealCards();">
+          <img id="card4" src="https://tarot-history.com/wp-content/uploads/2021/11/dos-hermine-web-bas-200x359.jpg"
+            alt="reverse of Tarot de Marseille" />
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <div id="footer">
+  <div id="poems">
+    <button onclick="poemOfTheDay();">Poetry Foundation</button>
+    <button onclick="poemADay();">Academy of American Poets</button>
+    <button onclick="poetryDaily();">Poetry Daily</button>
+    <br />
+    <input type="text" id="searchTerm" placeholder="search poetry.com for a phrase?" />
+    <button onclick="loadPoems();">Search</button>
+  </div>
+  <div id="lunar">
+    <br />
+    <div id="moon">
+      <img id="moonPic" src="" />
+    </div>
+    <br />
+    <input id="phaseDate" placeholder="1984-12-19"/>
+    <br />
+    <button onclick="moon();"> Set date for lunar phase </button>
+  </div>
+</div>
+</body>
+
+</html>

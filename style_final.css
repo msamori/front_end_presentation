@@ -1,0 +1,234 @@
+/* cool border trick from stackoverflow: */
+/* https://stackoverflow.com/questions/66965047/how-to-make-a-3d-frame-with-css */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Bamboo_cutting_board_surface_texture_2014_02.jpg/1280px-Bamboo_cutting_board_surface_texture_2014_02.jpg");
+  background-size: cover;
+}
+
+#header {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+#links {
+  display: flex;
+  justify-content: left;
+}
+
+#links img {
+  height: 6vh;
+}
+
+#links a {
+  padding: 5%;
+}
+
+#crest img {
+  height: 7vh;
+  filter: grayscale(100%);
+  opacity: 0.87;
+}
+
+#time {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+
+
+#myClock {
+  margin: 10%;
+  font: bold 15px arial, sans-serif;
+  border: none;
+  background-color: #565656;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+#poetry {
+  height: 50vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 25px solid;
+  border-image-slice: 27 27 27 27;
+  border-image-width: 15px 15px 15px 15px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Kapelle_St._Martin-Caplutta_Sogn_Martin._%28actm%29_02.jpg/529px-Kapelle_St._Martin-Caplutta_Sogn_Martin._%28actm%29_02.jpg");
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+  display: none;
+}
+
+#search {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font: bold 15px arial, sans-serif;
+  justify-content: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  overflow: scroll;
+}
+
+#creed {
+  position: absolute;
+  margin-left: 36vw;
+  margin-right: 30vw;
+  font: bold 15px arial, sans-serif;
+  border: none;
+  background-color: #565656;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  z-index: -1;
+}
+
+#tarot {
+  display: flex;
+  justify-content: right;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#tarot button {
+  border: none;
+  background: none;
+}
+
+.cards {
+  height: 45vh;
+  width: 15vw;
+  display: none;
+  margin: 3px;
+  box-shadow: 2px 2px 1px;
+}
+
+.deck {
+  align-items: center;
+}
+
+#card4 {
+  height: 45vh;
+  width: 15vw;
+  box-shadow: 10px 10px 2px;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+#poems {
+  width: 20vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+input {
+  width: 15vw;
+  text-align: center;
+  background: none;
+  justify-content: center;
+  font: bold 14px arial, sans-serif;
+  border: none;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  border-style: double;
+  border-color: black;
+  border-width: 1vh;
+}
+
+input::placeholder {
+  color: black;
+}
+
+#poems button {
+  font: bold 15px arial, sans-serif;
+  border: none;
+  background-color: #565656;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+#lunar {
+  width: 15vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 1%;
+}
+
+#moon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  border: 10px solid;
+  border-image-slice: 27 27 27 27;
+  border-image-width: 10px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Kapelle_St._Martin-Caplutta_Sogn_Martin._%28actm%29_02.jpg/529px-Kapelle_St._Martin-Caplutta_Sogn_Martin._%28actm%29_02.jpg");
+}
+
+#lunar button {
+  font: bold 15px arial, sans-serif;
+  border: none;
+  background-color: #565656;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+#moon img {
+  height: 10vh;
+}
+
+button:hover {
+  cursor: pointer;
+}
